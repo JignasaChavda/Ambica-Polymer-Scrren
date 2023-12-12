@@ -254,6 +254,27 @@ fixtures = [
                "Ambica HrScreen"
             ],
         ]
+    ]},
+    {"dt":"Custom DocPerm","filters":[
+        [
+            "role","in",[
+               "Ambica HR-User"
+            ],
+        ]
+    ]},
+    {"dt":"Role","filters":[
+        [
+            "name","in",[
+               "Ambica HR-User"
+            ],
+        ]
+    ]},
+    {"dt":"Module Profile","filters":[
+        [
+            "name","in",[
+               "Ambica HR-Payroll"
+            ],
+        ]
     ]}
     
 ]
