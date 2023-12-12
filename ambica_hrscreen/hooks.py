@@ -226,4 +226,27 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 #	"Logging DocType Name": 30  # days to retain logs
 # }
-
+fixtures = [
+    {"dt":"Server Script","filters":[
+        [
+            "module","in",[
+               "Ambica HrScreen"
+            ],
+        ]
+    ]},
+    {"dt":"Custom Field","filters":[
+        [
+            "module","in",[
+               "Ambica HrScreen"
+            ]
+        ]
+    ]},
+    {"dt":"Client Script","filters":[
+        [
+            "module","in",[
+               "Ambica HrScreen"
+            ],
+        ]
+    ]}
+    
+]
