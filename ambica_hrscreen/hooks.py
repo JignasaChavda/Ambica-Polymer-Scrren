@@ -247,6 +247,13 @@ fixtures = [
                "Ambica HrScreen"
             ],
         ]
+    ]},
+    {"dt":"Property Setter","filters":[
+        [
+            "module","in",[
+               "Ambica HrScreen"
+            ],
+        ]
     ]}
     
 ]
