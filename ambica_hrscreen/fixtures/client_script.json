@@ -1,1 +1,13 @@
-[]
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Employee",
+  "enabled": 1,
+  "modified": "2023-12-12 15:08:44.366729",
+  "module": "Ambica HrScreen",
+  "name": "Set height of custom field",
+  "script": "frappe.ui.form.on('Employee', {\n\trefresh: function(frm) {\n\t    var fields = ['custom_religion','custom_witness_name_1','custom_witness_name_2','custom_whatsapp_no','custom_address_line_1','custom_address_line_2','custom_address_line_2_permanent','custom_address_line_1_permanent','custom_canteen_card_no','custom_aadhaar_number','custom_uan_number','custom_bank_branch','custom_salary_structure','custom_father_occupation']\n\t\tfields.forEach(function(field) {\n            var $field = frm.fields_dict[field];\n            if ($field && $field.$input) {\n                $field.$input.css({'height': '33px'});\n            }\n        });\n\t}\n})\n",
+  "view": "Form"
+ }
+]
