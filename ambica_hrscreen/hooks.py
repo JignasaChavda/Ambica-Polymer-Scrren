@@ -275,6 +275,13 @@ fixtures = [
                "Ambica HR-Payroll"
             ],
         ]
+    ]},
+    {"dt":"Workspace","filters":[
+        [
+            "module","in",[
+               "Ambica HrScreen"
+            ],
+        ]
     ]}
     
 ]
