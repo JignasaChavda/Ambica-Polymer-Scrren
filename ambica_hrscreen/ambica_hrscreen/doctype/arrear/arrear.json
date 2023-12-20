@@ -11,12 +11,17 @@
  "field_order": [
   "naming_series",
   "posting_date",
-  "component",
   "from_date",
+  "to_date",
+  "component",
+  "for_all_employees",
+  "employee",
+  "employee_name",
   "column_break_7drtl",
+  "company",
+  "branch",
   "department",
   "category",
-  "to_date",
   "get_data",
   "section_break_oredi",
   "arrear_details"
@@ -81,11 +86,44 @@
    "fieldtype": "Table",
    "label": "Arrear Details",
    "options": "Arrear Details"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "default": "0",
+   "fieldname": "for_all_employees",
+   "fieldtype": "Check",
+   "label": "For All Employees"
+  },
+  {
+   "depends_on": "eval:doc.for_all_employees==0",
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "depends_on": "eval:doc.for_all_employees==0",
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-15 18:54:06.636712",
+ "modified": "2023-12-18 12:29:03.457207",
  "modified_by": "Administrator",
  "module": "Ambica HrScreen",
  "name": "Arrear",
