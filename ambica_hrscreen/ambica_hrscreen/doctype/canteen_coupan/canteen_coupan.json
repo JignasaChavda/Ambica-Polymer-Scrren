@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-21 11:41:36.841065",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee",
+  "employee_name",
+  "department",
+  "designation",
+  "date",
+  "shift_coupan_used_in",
+  "column_break_epyl",
+  "coupan_no",
+  "lunch",
+  "dinner",
+  "tea_and_snacks",
+  "reason",
+  "software_manual",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Data",
+   "label": "Employee"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "shift_coupan_used_in",
+   "fieldtype": "Link",
+   "label": "Shift - Coupan Used In",
+   "options": "Shift Type"
+  },
+  {
+   "fieldname": "column_break_epyl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "coupan_no",
+   "fieldtype": "Data",
+   "label": "Coupan No"
+  },
+  {
+   "fieldname": "lunch",
+   "fieldtype": "Int",
+   "label": "Lunch"
+  },
+  {
+   "fieldname": "dinner",
+   "fieldtype": "Int",
+   "label": "Dinner"
+  },
+  {
+   "fieldname": "tea_and_snacks",
+   "fieldtype": "Int",
+   "label": "Tea & Snacks"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Canteen Coupan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming series",
+   "options": "CAN-COUPAN-."
+  },
+  {
+   "fieldname": "software_manual",
+   "fieldtype": "Select",
+   "label": "Software/Manual",
+   "options": "Software\nManual"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-21 11:53:24.831775",
+ "modified_by": "Administrator",
+ "module": "Ambica HrScreen",
+ "name": "Canteen Coupan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
